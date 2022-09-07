@@ -7,12 +7,12 @@ let isStudent: boolean;
 let hobbies: string[];
 let role: [number, string];
 
-type Person = {
+/* type Person = {
   name: string;
   age?: number;
 };
 
-let person: Person[];
+let person: Person[]; */
 
 const App = () => {
   return (
