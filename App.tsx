@@ -2,16 +2,17 @@ import * as React from 'react';
 import { useState } from 'react';
 import './App.css';
 import InputField from './components/InputField';
+import { Todo } from './model';
 
 const App: React.FC = () => {
   const [todo, setTodo] = useState<string>('');
 
-  console.log(todo);
+  const [todos, setTodos] = useState<Todo[]>([]);
 
   return (
     <div className="App">
       <span className="heading">Taskify</span>
-      <InputField todo={todo} setTodo={setTodo}/>
+      <InputField todo={todo} setTodo={setTodo} />
     </div>
   );
 };
