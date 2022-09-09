@@ -9,7 +9,7 @@ const App: React.FC = () => {
 
   const [todos, setTodos] = useState<Todo[]>([]);
 
-  const handleAdd = () = > {};
+  const handleAdd = () => {};
 
   return (
     <div className="App">
