@@ -1,11 +1,18 @@
 import * as React from 'react';
+import { Todo } from "../model";
 import "./styles.css"
 
+interface Props {
+  todos: Todo[];
+  setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
+}
 
-const ToDoList: React.FC = () => {
+const TodoList: React.FC = ({ todos, setTodos }) => {
   return (
-    <div>
-      
+    <div className="todos">
+      {}
     </div>
   )
 }
+
+export default TodoList;
