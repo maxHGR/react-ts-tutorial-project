@@ -9,10 +9,12 @@ const App: React.FC = () => {
 
   const [todos, setTodos] = useState<Todo[]>([]);
 
+  const handleAdd = () = > {};
+
   return (
     <div className="App">
       <span className="heading">Taskify</span>
-      <InputField todo={todo} setTodo={setTodo} />
+      <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
     </div>
   );
 };
